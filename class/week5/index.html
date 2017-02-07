@@ -46,13 +46,123 @@
           max-height:250px;
         }
 
-        img{
-          width: 100%;
-        }
-
         body{
           background-color: black;
           color: white;
+        }
+
+        .container-fluid {
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .centerType {
+            padding: 0 5px;
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+
+        /*------------*/
+        .paddingMargin img {
+            margin-top: 8%;
+            margin-left: 30%;
+        }
+
+        .paddingMargin div {
+            margin-left: 20%;
+        }
+
+        /*------------*/
+        /*------------*/
+        .textAlignCenter {
+            text-align: center;
+        }
+        /*------------*/
+        /*------------*/
+        .marginAuto {
+            margin: 0 auto;
+            width: 50%;
+        }
+        /*------------*/
+        /*------------*/
+        img.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+        /*------------*/
+        /*------------*/
+        .paddingMarginPlus img {
+            padding-top: 10%;
+            padding-bottom: 3%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .paddingMarginPlus div {
+            padding: 3%;
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertRelativeContainer {
+            position: relative;
+        }
+
+        .horAndVertRelativeContainer img {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .horAndVertRelativeContainer div {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertRelativeWithChild {
+            position: relative;
+        }
+
+        .horAndVertAbsoluteChild {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertFlexContainerElementsVertical {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+        }
+        .horAndVertFlexContainerElementsVertical div{
+          width:60%;
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertFlexContainerElementsHorizontal {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .positionRelative{
+          position: relative;
+        }
+
+        .positionRelative img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
     </style>
@@ -71,9 +181,7 @@
       <div class="row">
           <div class="col-md-3 randomColor height bigtext">
           </div>
-          <div class="col-md-6 randomColor height">
-          </div>
-          <div class="col-md-1 randomColor height smalltext">
+          <div class="col-md-7 randomColor height">
           </div>
           <div class="col-md-1 randomColor height smalltext">
           </div>
@@ -83,17 +191,34 @@
 
       <div class="row"> <!-- Middle row-->
         <div class="col-md-12 randomColor height2">
+          <img src="images/puppy4.gif" class="displayed">
+          <div class="Text textAlignCenter">
+              Margin: 0 auto using display: block.
+          </div>
         </div>
       </div>
 
       <div class="row"> <!-- Bottom row-->
-        <div class="col-md-3 randomColor height3">
+        <div class="col-md-3 randomColor height3 paddingMargin">
+            <span class="centerType">Padding / Margin</span>
+            <br />
+            <img src="images/puppy1.jpg" />
         </div>
-        <div class="col-md-3 randomColor height3">
+        <div class="col-md-3 randomColor height3 horAndVertRelativeContainer">
+          <span class="centerType">Position</span>
+          <img src="images/puppy2.png">
         </div>
-        <div class="col-md-3 randomColor height3">
+        <div class="col-md-3 randomColor height3 positionRelative">
+          <span class="centerType">Position Relative</span>
+          <br />
+          <img src="images/puppy5.jpg" />
         </div>
-        <div class="col-md-3 randomColor height3">
+        <div class="col-md-3 randomColor height3 horAndVertFlexContainerElementsVertical">
+          <span class="centerType">Flex</span>
+          <img src="images/puppy3.jpg">
+          <div class="textAlignCenter">
+              This is positioned by using flex.
+          </div>
         </div>
       </div>
 
