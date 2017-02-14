@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+    <style media="screen">
+
+        .bigtext{
+          font-size: 50px;
+          text-align: center;
+          line-height: 90px;
+        }
+
+        .smalltext{
+          font-size: 20px;
+          text-align: center;
+          line-height: 90px;
+        }
+
+        .height{
+          height: 100px;
+          min-height: 100px;
+          max-height: 100px;
+          font-family: 'Fredoka One', cursive;
+      }
+
+        .height2{
+          height: 100px;
+          min-height: 100px;
+          max-height: 100px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 100px;
+          }
+
+        .height3{
+          height:100px;
+          min-height:100px;
+          max-height:100px;
+        }
+
+        .box1{
+          height: 75%;
+          display: block;
+          margin: 0 auto;
+          padding-top: 20px;
+        }
+
+        body{
+          background-color: black;
+          color: white;
+        }
+
+        .box2{
+          margin-top: 5px;
+          height: 75%;
+          margin-left: 20%;
+        }
+
+        .box3{
+          height: 50%;
+          margin-top: 5px;
+          margin-left: 14%;
+        }
+
+        .minionz{
+          text-align: center;
+        }
+
+        .relative{
+          position: relative;
+        }
+
+        .relative img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 75%;
+        }
+
+        .relative2{
+          position: relative;
+        }
+
+        .relative2 img{
+          position: absolute;
+          height:75%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        #pic1{
+          left: 40%;
+        }
+
+        #pic2{
+          left: 60%;
+        }
+
+        .container-fluid {
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .centerType {
+            padding: 0 5px;
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+
+        /*------------*/
+        .paddingMargin img {
+            margin-top: 8%;
+            margin-left: 30%;
+        }
+
+        .paddingMargin div {
+            margin-left: 20%;
+        }
+
+        /*------------*/
+        /*------------*/
+        .textAlignCenter {
+            text-align: center;
+        }
+        /*------------*/
+        /*------------*/
+        .marginAuto {
+            margin: 0 auto;
+            width: 50%;
+        }
+        /*------------*/
+        /*------------*/
+        img.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+        /*------------*/
+        /*------------*/
+        .paddingMarginPlus img {
+            padding-top: 10%;
+            padding-bottom: 3%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .paddingMarginPlus div {
+            padding: 3%;
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertRelativeContainer {
+            position: relative;
+        }
+
+        .horAndVertRelativeContainer img {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .horAndVertRelativeContainer div {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertRelativeWithChild {
+            position: relative;
+        }
+
+        .horAndVertAbsoluteChild {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertFlexContainerElementsVertical {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+        }
+        .horAndVertFlexContainerElementsVertical div{
+          width:60%;
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertFlexContainerElementsHorizontal {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .positionRelative{
+          position: relative;
+        }
+
+        .positionRelative img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <div class="container"> <!-- Top row-->
+      <div class="row">
+          <div class="col-md-3 randomColor height bigtext">
+          </div>
+          <div class="col-md-6 randomColor height">
+          </div>
+          <div class="col-md-1 randomColor height smalltext">
+          </div>
+          <div class="col-md-1 randomColor height smalltext">
+          </div>
+          <div class="col-md-1 randomColor height smalltext">
+          </div>
+      </div>
+
+      <div class="row"> <!-- Middle row-->
+        <div class="col-md-12 randomColor height2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+
+      <div class="row"> <!-- Bottom row-->
+        <div class="col-md-4 randomColor height3">
+          <img class="box1" src="images/minion.jpg" />
+        </div>
+        <div class="col-md-4 randomColor height3">
+            <img class="box2" src="images/minion.jpg" />
+            <img class="box2" src="images/minion.jpg" />
+        </div>
+        <div class="col-md-4 randomColor height3">
+            <img class="box3" src="images/minion.jpg" />
+            <img class="box3" src="images/minion.jpg" />
+            <img class="box3" src="images/minion.jpg" />
+            <div class="minionz">
+              Minions rule
+            </div>
+        </div>
+      </div>
+
+      <div class="row"> <!-- Bottom row-->
+        <div class="col-md-4 randomColor height3 relative">
+          <img src="images/minion.jpg" />
+        </div>
+        <div class="col-md-4 randomColor height3 relative2">
+          <img id="pic1" src="images/minion.jpg" />
+          <img id="pic2" src="images/minion.jpg" />
+        </div>
+        <div class="col-md-4 randomColor height3">
+        </div>
+      </div>
+
+      <div class="row"> <!-- Bottom row-->
+        <div class="col-md-4 randomColor height3">
+        </div>
+        <div class="col-md-4 randomColor height3">
+        </div>
+        <div class="col-md-4 randomColor height3">
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+        })
+    </script>
+
+</body>
+
+</html>
