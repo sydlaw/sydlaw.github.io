@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Larry the Leaser</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style media="screen">
+
+        .bigtext{
+          font-size: 50px;
+          text-align: center;
+          line-height: 90px;
+        }
+
+        .height{
+          height: 100px;
+          min-height: 100px;
+          max-height: 100px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 100px;
+      }
+
+        .height2{
+          height: 300px;
+          min-height: 300px;
+          max-height: 300px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 70px;
+          }
+
+        .height2 img{
+          height: 75%;
+        }
+
+        .height3{
+          height: 50px;
+          max-height: 50px;
+          min-height: 50px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 50px;
+        }
+
+        .height4{
+          height:300px;
+          min-height:300px;
+          max-height:300px;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 100px;
+        }
+
+        body{
+          background-color: black;
+          color: white;
+        }
+
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <div class="container"> <!-- Top row-->
+      <div class="row">
+          <div class="col-md-4 randomColor height bigtext">
+            Logo/Header
+          </div>
+          <div class="col-md-6 randomColor height">
+          </div>
+          <div class="col-md-2 randomColor height">
+            Log In Button
+          </div>
+      </div>
+
+      <div class="row"> <!-- Image row-->
+        <div class="col-md-12 randomColor height3">
+          Nav Bar
+        </div>
+      </div>
+
+      <div class="row"> <!-- Image row-->
+        <div class="col-md-12 randomColor height2">
+          Image 1
+        </div>
+      </div>
+
+      <div class="row"> <!-- Middle row-->
+        <div class="col-md-3 randomColor height2">
+          Image 2
+          <img src="images/wireframe.jpg" />
+        </div>
+        <div class="col-md-9 randomColor height2">
+          This wireframe solves the issues described in the presentation because it is clear, easy to read and easy to navigate. It is modern and minimalistic, and includes areas for images, text, the logo, and other important parts of this design.
+        </div>
+      </div>
+
+      <div class="row"> <!-- Footer row-->
+        <div class="col-md-12 randomColor height4">
+          Footer
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+        })
+    </script>
+
+</body>
+
+</html>
