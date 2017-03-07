@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 8</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style media="screen">
+        #centerDiv {
+            text-align: center;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="carDiv" class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="boatDiv" class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="planeDiv" class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        // our program
+
+        var myString = "a string";
+        var myNumber = 2;
+        var myVar = "2";
+        var myBoolean = false;
+        var myVar2 = "true";
+
+        //array; declare with square brackets
+        // declaring an empty array
+        var myArray = [];
+
+        var myFullArray = ["Calen", "Nicole", "Evan"];
+
+        console.log(myFullArray[0]);
+        console.log("myFullArray 2nd value = " + myFullArray[1]);
+
+        var myMixArray = [3, "David", false];
+        myMixArray.push("another value");
+        console.log("myMixArray values: " + myMixArray);
+
+        //type, price, color, mileage, fuelType, src, etc > properties
+        var car = {
+            type: "SUV",
+            price: 45000,
+            mileage: 24,
+            color: "magenta",
+            fuelType: "electric",
+            src: "images/car1.jpg",
+            message: function() {
+                console.log("A car is useful!");
+            }
+        };
+
+        var boat = {
+            type: "Bowrider",
+            price: "300,000",
+            color: "red",
+            fuelType: "normal",
+            src: "images/boat1.jpg",
+        };
+
+        var plane = {
+            type: "Jet",
+            price: "800,000",
+            color: "yellow",
+            fuelType: "normal",
+            src: "images/plane1.png",
+        };
+
+
+
+        // object name.property
+        console.log(car.type);
+        console.log(car.price);
+        console.log(car.message());
+
+        //when the document is ready, the things below will happen
+        $(document).ready(function() {
+
+            /*
+            $("#carDiv").html("<div id='centerDiv'>")
+            $("#carDiv").append("<div>"+car.type+"</div>");
+            $("#carDiv").append("<img src='"+car.src +"' />");
+            $("#carDiv").append("<div>"+car.price+"</div>");
+            $("#carDiv").append("</div>");
+            });
+            */
+
+            var myHtml = "<div id='centerDiv'>" +
+                "<div>" + car.type + "</div>" +
+                "<img src='" + car.src + "'/>" +
+                "<div>" + car.price + "</div>" +
+                "</div>";
+            $("#carDiv").html(myHtml);
+
+            var myHtml = "<div id='centerDiv'>" +
+                "<div>" + boat.type + "</div>" +
+                "<img src='" + boat.src + "'/>" +
+                "<div>" + boat.price + "</div>" +
+                "</div>";
+            $("#boatDiv").html(myHtml);
+
+            var myHtml = "<div id='centerDiv'>" +
+                "<div>" + plane.type + "</div>" +
+                "<img src='" + plane.src + "'/>" +
+                "<div>" + plane.price + "</div>" +
+                "</div>";
+            $("#planeDiv").html(myHtml);
+
+
+        });
+    </script>
+</body>
+
+</html>
