@@ -1,50 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Screen Example</title>
+    <title>Stacked Example</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <style>
-    .header{
-      min-height: 100px;
-      max-height: 100px;
-    }
-
-    .middle{
-      min-height: 600px;
-      max-height: 600px;
-    }
-
-    .mid{
-      min-height: 200px;
-      max-height: 200px;
-    }
-
-    .tiny{
-      min-height: 300px;
-      max-height: 300px;
-    }
-
-    .footer{
-      min-height: 60px;
-      max-height: 60px;
-    }
-
-    body{
-      font-size: 200%;
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,50 +16,31 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-
-<body>
-
+  </head>
+  <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 randomColor hidden-xs header">
+            <div class="col-md-1 randomColor">
+              1
             </div>
+            <div class="col-md-2 randomColor">
+              2
+            </div>
+            <div class="col-md-3 randomColor">
+              3
+            </div>
+            <div class="col-md-4 randomColor">
+              4
+            </div>
+            <div class="col-md-5 randomColor">
+              5
+            </div>
+            <div class="col-md-6 randomColor">
+              6
+            </div>
+
         </div>
-
-        <div class="row">
-            <div class="col-md-2 randomColor hidden-xs middle">
-            </div>
-
-            <div class="col-md-8 randomColor middle">
-                <div class="row">
-                    <div class="col-md-6 randomColor tiny">
-                      <img src="images/wood1.jpg" alt="image" />
-                    </div>
-                    <div class="col-md-6 randomColor tiny">
-                      <img src="images/wood2.jpg" alt="image"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 randomColor tiny">
-                      <img src="images/wood3.jpg" alt="image"/>
-                    </div>
-                    <div class="col-md-6 randomColor tiny">
-                      <img src="images/wood4.jpg" alt="image"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 randomColor hidden-xs middle">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 randomColor hidden-xs footer">
-
-            </div>
-        </div>
-    </div>
-
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -119,6 +64,5 @@
             $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
         })
     </script>
-</body>
-
+  </body>
 </html>
