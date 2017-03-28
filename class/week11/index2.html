@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 11</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+
+    <style media="screen">
+        @import url('https://fonts.googleapis.com/css?family=Lalezar');
+        /*background*/
+
+        body {
+            background-color: black;
+            /* Ensure div tag stays behind content; -999 might work, too. */
+        }
+
+        #gifContainer {
+            position: relative;
+            top: 40%;
+            left: 36%;
+            padding-top: 100px;
+        }
+
+        #link {
+            position: relative;
+            top: 40%;
+            left: 36%;
+            font-family: 'Lalezar', cursive;
+            font-size: 20px;
+        }
+
+        .image {
+            width: 5%;
+            position: absolute;
+            top: 5%;
+            right: 33%;
+            z-index: 3;
+            -webkit-animation-name: spin;
+            -webkit-animation-duration: 4000ms;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-name: spin;
+            -moz-animation-duration: 4000ms;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+            -ms-animation-name: spin;
+            -ms-animation-duration: 4000ms;
+            -ms-animation-iteration-count: infinite;
+            -ms-animation-timing-function: linear;
+            -o-transition: rotate(3600deg);
+        }
+
+        h1 {
+            font-family: 'Lalezar', cursive;
+            font-size: 100px;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <img class="image" src="images/cat.png" alt="cat image">
+    <h1>Kitty Time</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //call the api with some parameters
+        var giphyUrl =
+            "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
+        //get the JSON
+        $.get(giphyUrl)
+            .done(function(data) { //data returned successfully
+                console.log("success");
+                console.dir(data); //check out the data
+
+                var myHtml = " ";
+
+                for (var i = 0; i < 10; i = i + 1) {
+                    console.log("src: " + data.data[i].embed_url);
+
+                    myHtml += '<iframe src=" ' + data.data[i].embed_url + '" width="480" height="457" id="gifContainer" frameborder="0" class="giphy-embed" allowfullscreen></iframe>' + '<p><a id="link" href="">via GIPHY</a></p>';
+                }
+
+                $("body").append(myHtml);
+            })
+
+            .fail(function(data) {
+                console.log("fail");
+            })
+    </script>
+</body>
+
+</html>
