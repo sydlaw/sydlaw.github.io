@@ -1,0 +1,70 @@
+[{
+        "name": "Samsung Galaxy S7",
+        "price": "$100.00",
+        "provider": "Koodo Mobile",
+        "storage": "16GB",
+        "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQN7Dmi2PB1aC5m1annRTJJj2YCL8bLjxh4zv-IJqQ5nmeaEAFHUIrr3S0SKt3PHBr9qLkt4u_C&usqp=CAE"
+    },
+    {
+      "name": "IPhone SE",
+      "price": "$0.00",
+      "provider": "Koodo Mobile",
+      "storage": "8GB",
+      "image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR3s5S8oS-13R9PJjbb4H54jEfGtvJaIr7ylPnq5OlpWej3D5AZ9Nt2DNZy_N6FRe6ZIJ09YwAW&usqp=CAE"
+    },
+    {
+      "name": "Acer Liquid Zest",
+      "price": "$99.00",
+      "provider": "Walmart",
+      "storage": "3GB",
+      "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR96U7nlxolvQnGX3OnH9qlqdJcre6ztWG7J0ZniT5xA5b9CPba0u1keK2r5BSHmm96yYoVT3I&usqp=CAE"
+    },
+    {
+      "name": "Huawei P8 Lite",
+      "price": "$259.98",
+      "provider": "Walmart",
+      "storage": "64GB",
+      "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT29DpjqNFSoLnzUx7U3QejMkcyVWcU2yP4aqrhy0I8qGtSB5FH4glVAtU9d5NhdqwahYjPtwt7&usqp=CAE"
+    },
+    {
+      "name": "Polaroid 6",
+      "price": "$199.98",
+      "provider": "Walmart",
+      "storage": "8GB",
+      "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS0Hp5AWml5-Mxy1tMhsXtoCYQgXjzsIgRTKkbxhR8dNBx1I_InufqUvBAu5QeAPu9bUuFidOM&usqp=CAE"
+    },
+    {
+      "name": "Apple IPhone 5",
+      "price": "$229.99",
+      "provider": "FactoryDirect.ca",
+      "storage": "16GB",
+      "image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdsPsnrPoCIJwcfFBEkVu3937tqbsmkASIQEOERD5q79sLKKZGxxEIoVqAGbuDMfbErf7DQ80&usqp=CAE"
+    },
+    {
+      "name": "Polaroid 1.8 A2",
+      "price": "$49.97",
+      "provider": "Walmart",
+      "storage": "1GB",
+      "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTpaNK0MkwwHX8CMC2QED_k-caVr11k3H58fRRfeGrGBiIzw9TsCOCAwBnK2nLr0x268fEhL0pk&usqp=CAE"
+    },
+    {
+      "name": "Samsung Galaxy J1",
+      "price": "$150.00",
+      "provider": "Telus",
+      "storage": "8GB",
+      "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRqyjcdqRmblnEUTHtxhowDqIFBKocfkkHSAq3J8-GxO2AkzRQf8RNN-5KtwARtAVw_YfnQ_4rK&usqp=CAE"
+    },
+    {
+      "name": "Polaroid Link",
+      "price": "$44.99",
+      "provider": "Walmart",
+      "storage": "1GB",
+      "image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGHOkLBiIQODu7uspebOvYC2ipxNARn4DpxQXuXVGo_C1FPBvkMmJmDnxT5Rx31mGlVxyPmDQ&usqp=CAE"
+    },
+    {
+      "name": "Pixel",
+      "price": "$899.00",
+      "provider": "Google Store",
+      "storage": "32GB",
+      "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQLWu3Xvs-QGowpGx-JieJ_77RcEoQUasDoWekNDtTNlYkhn_Hale2PiJcp10WTizMzRp1j5i2V&usqp=CAE"
+    }]
